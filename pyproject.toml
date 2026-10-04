@@ -1,0 +1,12 @@
+[project]
+name = "jarvis"
+version = "0.1.0"
+description = "Asistente personal de voz para Windows (doble palmada, control de escritorio, cerebro Claude)."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "integration: requiere modelos descargados (lenta; correr con -m integration)",
+]

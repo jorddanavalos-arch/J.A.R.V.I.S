@@ -1,0 +1,36 @@
+{
+  "_comentario": "Lista blanca: Jarvis SOLO puede abrir las apps declaradas aquí. 'lanzar.tipo': 'startfile' (ruta .lnk/.exe/.bat), 'aumid' (app de la Store, por AppUserModelID) o 'comando' (ejecutable en PATH).",
+  "apps": {
+    "ninjatrader": {
+      "titulo": "NinjaTrader",
+      "nombres": ["ninjatrader", "ninja trader", "ninja", "la plataforma"],
+      "lanzar": {"tipo": "startfile", "valor": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\NinjaTrader\\NinjaTrader.lnk"}
+    },
+    "tradingview": {
+      "titulo": "TradingView",
+      "nombres": ["tradingview", "trading view"],
+      "lanzar": {"tipo": "aumid", "valor": "TradingView.Desktop_n534cwy3pjxzj!TradingView.Desktop"}
+    },
+    "bot": {
+      "titulo": "su bot de trading MNQ",
+      "nombres": ["bot", "robot", "bot mnq", "mi bot", "mi robot", "el bot", "el robot"],
+      "lanzar": {"tipo": "startfile", "valor": "C:\\Users\\Kevin\\Desktop\\ARRANCAR BOT MNQ.bat"}
+    },
+    "spotify": {
+      "titulo": "Spotify",
+      "nombres": ["spotify"],
+      "lanzar": {"tipo": "aumid", "valor": "SpotifyAB.SpotifyMusic_zpdnekdrzrea0!Spotify"}
+    },
+    "navegador": {
+      "titulo": "el navegador",
+      "nombres": ["navegador", "chrome", "explorador web", "internet"],
+      "lanzar": {"tipo": "startfile", "valor": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"}
+    },
+    "explorador_archivos": {
+      "titulo": "el explorador de archivos",
+      "nombres": ["explorador", "archivos", "carpetas", "explorador de archivos"],
+      "lanzar": {"tipo": "comando", "valor": "explorer.exe"}
+    }
+  },
+  "carpetas_permitidas": []
+}

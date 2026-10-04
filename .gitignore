@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+logs/*.log*
+.env
+config/secrets.json
+*.wav
+models/
+.pytest_cache/
+config/settings.json.bak
+memory/jarvis_memory.md

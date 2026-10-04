@@ -1,0 +1,119 @@
+{
+  "idioma": "es",
+  "modo_seguro": true,
+  "wake": {
+    "doble_palmada": true,
+    "wake_word_activo": true,
+    "motor": "openwakeword",
+    "palabra": "jarvis",
+    "umbral": 0.2,
+    "vad": 0.25,
+    "modelo_oww": "hey_jarvis"
+  },
+  "activacion": {
+    "confirmar_con_palabra": true,
+    "palabra": "jarvis"
+  },
+  "audio": {
+    "sample_rate": 0,
+    "blocksize": 0,
+    "mic_settle_ms": 300,
+    "mic_watchdog_ms": 3000,
+    "mic_max_reopen": 6,
+    "palmada": {
+      "umbral_factor": 8.0,
+      "ventana_ms": [
+        120,
+        1300
+      ],
+      "cooldown_ms": 1500,
+      "hop_ms": 10,
+      "crest_min": 2.2,
+      "attack_min": 2.0,
+      "attack_max": 0.0,
+      "onset_max_ms": 120,
+      "decay_ratio_max": 0.5,
+      "refractario_ms": 90,
+      "ema_alpha": 0.03,
+      "piso_absoluto": 0.00076,
+      "hf_cutoff_hz": 2000,
+      "flatness_min": 0.02,
+      "hf_ratio_min": 0.2,
+      "exigir_espectro": false,
+      "clip_thresh": 0.98,
+      "clip_frac_min": 0.02,
+      "calibracion_ms": 400
+    },
+    "endpoint": {
+      "hop_ms": 20,
+      "calibracion_ms": 300,
+      "umbral_factor": 3.5,
+      "arranque_min_ms": 150,
+      "silencio_fin_ms": 850,
+      "pre_roll_ms": 300,
+      "sin_voz_timeout_ms": 2500,
+      "max_total_ms": 12000,
+      "ema_alpha": 0.05,
+      "floor_up_rate": 0.02,
+      "piso_absoluto": 0.0001
+    }
+  },
+  "stt": {
+    "modelo": "base",
+    "idioma": "es",
+    "compute_type": "int8",
+    "sample_rate": 16000,
+    "beam_size": 1,
+    "download_root": "models/whisper",
+    "vad": {
+      "min_silence_duration_ms": 500,
+      "speech_pad_ms": 200
+    },
+    "no_speech_max": 0.6,
+    "logprob_min": -1.5
+  },
+  "tts": {
+    "motor": "piper",
+    "voz_path": "models/piper/es/es_ES/davefx/medium/es_ES-davefx-medium.onnx",
+    "length_scale": 0.92,
+    "noise_scale": 0.6,
+    "noise_w_scale": 0.8,
+    "volume": 1.0
+  },
+  "cerebro": {
+    "backend": "suscripcion",
+    "modelo_suscripcion": "haiku",
+    "modelo": "claude-haiku-4-5-20251001",
+    "max_tokens": 2048,
+    "timeout_s": 60,
+    "web_search": true,
+    "auth": "auto"
+  },
+  "musica": {
+    "motor": "spotify",
+    "spotify_uri": "spotify:collection:tracks",
+    "spotify_uri_dj": "spotify:playlist:37i9dQZF1EYkqdzj48dyYq",
+    "youtube_url": "https://music.youtube.com/"
+  },
+  "hotkey": {
+    "activo": true,
+    "combinacion": "ctrl+alt+j"
+  },
+  "hud": {
+    "activo": true,
+    "puerto": 36911,
+    "abrir_navegador": true
+  },
+  "rutas": {
+    "nt8_export": null,
+    "estado_bot": "C:\\Users\\Kevin\\Desktop\\mnq-trading-bot\\reportes",
+    "noticias": "C:\\Users\\Kevin\\Desktop\\mnq-trading-bot\\config\\noticias_semana.json",
+    "fetch_noticias": "C:\\Users\\Kevin\\Desktop\\mnq-trading-bot\\scripts\\fetch_calendario.py",
+    "notas": [
+      "C:\\Users\\Kevin\\.claude\\projects\\C--Users-Kevin\\memory"
+    ]
+  },
+  "logs": {
+    "nivel": "INFO"
+  }
+}
